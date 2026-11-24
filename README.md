@@ -6,6 +6,25 @@ A primeira frente sugerida pelo professor foi implementada em uma cópia do
 projeto: os cinco notebooks continuam apresentando as etapas e os gráficos.
 Agora eles chamam funções reutilizáveis em arquivos Python menores.
 
+## Dashboard interativo · HAI 21.03
+
+O projeto inclui um [dashboard interativo](Dashboard_HAI_2103/) para explorar as medições industriais e os alertas históricos do conjunto `test5`. O painel compara Regressão Logística, Isolation Forest com PCA e a combinação pela regra OU. **Não realiza detecção em tempo real**.
+
+- [Código e arquivos do dashboard](Dashboard_HAI_2103/)
+- [Documentação, funcionamento e fontes dos dados](Dashboard_HAI_2103/README.md)
+
+**Executar localmente com Streamlit:**
+
+```bash
+cd Dashboard_HAI_2103
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+Para abrir a versão HTML sem instalar Python, baixe o repositório e abra `Dashboard_HAI_2103/painel/index.html` em um navegador atualizado. O arquivo usa dados incorporados e requer suporte a `DecompressionStream`.
+
+**Atenção às métricas:** a execução de referência incorporada ao painel apresenta 647 falsos positivos na Regressão Logística e 1.121 no ensemble; os resultados principais do artigo são 643 e 1.118, respectivamente. O [README do dashboard](Dashboard_HAI_2103/README.md) explica como importar a execução correspondente ao artigo.
+
 ## Comece por estes três pontos
 
 1. Leia **COMECE_AQUI.md**. Ele explica o que mudou em linguagem simples.
