@@ -1,0 +1,11 @@
+Metrica,RF,IF sem PCA,IF com PCA
+Acurácia,0.9772,0.5985,0.9485
+Precisão,0.8832,0.0579,0.3099
+Recall,0.255,0.8349,0.6206
+F1-score,0.3957,0.1083,0.4134
+Verdadeiros positivos,295.0,966.0,718.0
+Verdadeiros negativos,38405.0,22734.0,36845.0
+Falsos positivos,39.0,15710.0,1599.0
+Falsos negativos,862.0,191.0,439.0
+Taxa de falsos positivos,0.001,0.4086,0.0416
+Taxa de falsos negativos,0.745,0.1651,0.3794

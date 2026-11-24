@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><meta name="theme-color" content="#111820">
+<title>HAI 21.03 | Detecção de anomalias</title>
+<style>__ESTILO__</style>
+</head>
+<body>
+<header class="industrial-banner" aria-label="Detecção de anomalias">
+  <div class="industrial-banner-inner">
+    <span class="factory-icon" aria-hidden="true">
+      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10 54V31l13 8V29l13 9V27l18 11v16H10Z"/>
+        <path d="M46 30V13h8v22M16 26V12h8v20M11 54h46M19 45h3M31 45h3M43 45h3"/>
+        <path d="M12 8c2-4 8-4 10-1M45 8c2-4 9-4 11 0" stroke-width="2"/>
+      </svg>
+    </span>
+    <span class="industrial-divider" aria-hidden="true"></span>
+    <strong class="industrial-title">DETECÇÃO DE ANOMALIAS</strong>
+  </div>
+</header>
+<div class="topbar">
+  <div class="topbar-inner">
+    <nav class="tabs" aria-label="Telas do dashboard"><button id="tab-analysis" class="active" aria-current="page">Análise temporal</button><button id="tab-results">Resultados</button></nav>
+    <div class="top-status"><span class="status-dot" aria-hidden="true"></span>Reprodução histórica <span class="top-status-sep">·</span> test5</div>
+  </div>
+</div>
+<div id="loading" class="loading" role="status">Carregando os registros históricos…</div>
+<noscript>O painel precisa do JavaScript do navegador para abrir os registros históricos.</noscript>
+<main id="main" hidden>
+  <section id="analysis-view" aria-labelledby="analysis-title">
+    <div class="heading"><div class="heading-copy"><span class="eyebrow" id="episode-number">EPISÓDIO 08</span><h1 id="analysis-title">Análise dos alertas</h1><p id="episode-sub"></p></div>
+      <div class="episode-control"><button id="previous" class="arrow" aria-label="Episódio anterior">‹</button><label for="episode-select"><span>Selecionar episódio</span><select id="episode-select"></select></label><button id="next" class="arrow" aria-label="Próximo episódio">›</button></div>
+    </div>
+    <div class="facts" id="facts"><span><strong id="fact-total">—</strong> registros</span><b class="fact-sep">·</b><span><strong id="fact-attacks">—</strong> de ataque</span><b class="fact-sep">·</b><span><strong id="fact-episodes">—</strong> episódios</span></div>
+    <section class="panel chart-panel" aria-label="Gráfico dos sinais e alertas">
+      <div class="chart-top"><div><h2>Evolução do sinal industrial</h2><p id="signal-desc"></p></div><label class="sensor-select"><span>Sinal</span><select id="signal"></select></label></div>
+      <div class="legend"><span><i class="swatch attack"></i>Ataque rotulado</span><span><i class="swatch detected"></i>Alerta durante ataque</span><span><i class="swatch false"></i>Falso positivo</span><span><i class="swatch selected"></i>Instante selecionado</span></div>
+      <div class="chart-wrap"><canvas id="timeline" height="400" role="img" aria-label="Evolução temporal do sinal industrial e alertas dos três detectores"></canvas></div>
+      <div class="playback"><div class="playback-line"><div class="playback-actions"><button id="play" class="play-primary"><span id="play-label">Reproduzir</span></button><button id="restart" class="play-secondary">Reiniciar</button><label class="speed-label"><span>Velocidade</span><select id="speed"><option value="1">1×</option><option value="5" selected>5×</option><option value="15">15×</option></select></label></div><div class="time-readout"><span id="clock" class="current-time"></span><strong id="relative-time" class="relative-time"></strong></div></div>
+      <input id="scrub" type="range" min="0" max="1" step="1" value="0" aria-label="Posição da reprodução histórica"><div class="range-times"><span id="range-min"></span><span id="range-max"></span></div></div>
+    </section>
+    <section class="summary-section" aria-labelledby="detectors-title"><div class="section-intro"><h2 id="detectors-title">Comparação dos detectores</h2><div class="summary-context"><p>Métricas do episódio completo · cor e estado referentes ao instante selecionado.</p><span id="comparison-status" class="comparison-status" aria-live="off" hidden></span></div></div><div id="model-cards" class="detectors"></div></section>
+    <p class="method-note">O painel reproduz medições e previsões já armazenadas. Não realiza detecção em tempo real. Unidades conforme o manual HAI; sinais digitais e P3_LIT01 mantêm a escala original do arquivo, sem conversão.</p>
+  </section>
+  <section id="results-view" aria-labelledby="results-title" hidden>
+    <div class="heading results-heading"><div class="heading-copy"><span class="eyebrow">AVALIAÇÃO HISTÓRICA · TEST5</span><h1 id="results-title">Resultados dos detectores</h1><p id="results-sub"></p></div></div>
+    <section class="panel results-panel"><div class="result-heading"><h2>Comparação geral</h2><p>Os indicadores são calculados a partir das previsões armazenadas para o conjunto completo.</p></div><div class="table-wrap"><table id="metrics-table"><thead><tr><th scope="col">Detector</th><th scope="col">F1</th><th scope="col">VP</th><th scope="col">FP</th><th scope="col">Episódios</th><th scope="col">Atraso mediano</th></tr></thead><tbody id="metrics-body"></tbody></table></div><p class="table-note">VP e FP contam registros de um segundo, não alarmes independentes. A mediana considera apenas episódios com alerta.</p></section>
+    <section class="panel takeaways"><h2>LR × Ensemble OU</h2><p id="result-summary"></p></section>
+    <p class="consistency-note" id="consistency-warning" hidden>As previsões de referência incluídas no painel não reproduzem exatamente todos os números do artigo. Confira o arquivo <code>dados/previsoes_referencia_test5.csv.gz</code> antes da apresentação.</p>
+    <p class="method-note">Treinamento: test1–test3. Seleção dos limiares: test4. Avaliação histórica: test5.</p>
+  </section>
+</main>
+<footer class="footer" id="footer" hidden><span>HAI 21.03 <span class="footer-dot">·</span> Engenharia de Computação — UNIFEI</span><span>Dados históricos, não monitoramento contínuo</span></footer>
+<script type="application/json" id="metadata">__METADADOS__</script><script type="application/octet-stream" id="measurements">__DADOS_GZIP__</script><script>__PROGRAMA__</script>
+</body>
+</html>

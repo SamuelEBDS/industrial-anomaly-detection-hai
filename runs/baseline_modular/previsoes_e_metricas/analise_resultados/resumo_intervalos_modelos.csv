@@ -1,0 +1,4 @@
+Modelo,Intervalos com algum alerta,Intervalos sem alerta,Total de intervalos,Cobertura global dos registros (%)
+RF,11,1,12,60.54203031694993
+IF sem PCA,11,1,12,35.002296738631145
+IF com PCA,10,2,12,41.341295360587964

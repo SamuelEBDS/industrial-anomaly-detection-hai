@@ -1,0 +1,16 @@
+{
+  "dataset": "HAI 21.03",
+  "regra": "OU entre os alertas binários da Regressão Logística e do IF com PCA",
+  "limiares": {
+    "regressao_logistica": 0.15296581460202174,
+    "if_com_pca": 0.5679992437002248
+  },
+  "origem_limiares": "test4.csv.gz",
+  "previsoes_logistica": "runs/regressao_logistica_20261111_123657/previsoes_e_metricas",
+  "previsoes_if_com_pca": "runs/baseline_modular/previsoes_e_metricas",
+  "avaliacao": {
+    "validacao": "test4.csv.gz",
+    "teste_historico": "test5.csv.gz"
+  },
+  "executado_em": "2026-11-12T21:56:09-03:00"
+}

@@ -1,0 +1,6 @@
+arquivo_origem,hora,registros_normais,falsos_positivos,pontuacao_mediana,pontuacao_p90,taxa_fp,particao,variante,configuracao,semente_amostragem,fp_if_sem_pca,fp_if_com_pca
+test5.csv.gz,2020-07-31 09:00:00,3338,3166,0.28,0.36,0.9484721390053924,teste_historico,rf_ponderado,RF ponderado,,1129,126
+test5.csv.gz,2020-07-31 10:00:00,3480,2951,0.22,0.29,0.8479885057471265,teste_historico,rf_ponderado,RF ponderado,,656,54
+test5.csv.gz,2020-07-31 11:00:00,3338,1479,0.16,0.21,0.44307968843618933,teste_historico,rf_ponderado,RF ponderado,,309,231
+test5.csv.gz,2020-07-31 08:00:00,3600,1372,0.06,0.25,0.3811111111111111,teste_historico,rf_ponderado,RF ponderado,,611,109
+test5.csv.gz,2020-07-31 12:00:00,1801,823,0.16,0.27,0.4569683509161577,teste_historico,rf_ponderado,RF ponderado,,294,6

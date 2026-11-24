@@ -1,0 +1,113 @@
+{
+  "config_sha256": "8b4f8fdc0dad89d09d71e74df6b1d6dc94f9048e39c7345845e971c4e830fd69",
+  "codigo_sha256": {
+    "__init__.py": "85ea59506d08dc0f4000a0cb8e3f57962e81da582a5a16a8623591439616b86c",
+    "data.py": "969a0acef976c7ddff636724ac8c1e2cc567ae05b6cb9e46eb12439428464664",
+    "evaluation.py": "990bf796fe3e69ff0db1086d0f3eb4516ec643ea51e1da23bf6a5ba605d7cc9a",
+    "experiment.py": "7c00f54f1c83102aac21fb97045609fef31a53300d4fa69a37038f3cf7ed1cd8",
+    "features.py": "ef8e7dcb741c5a2fc5dff9fdf5ac4595e4366150c04409f51ef939634e5e0311",
+    "models.py": "c21e628c7171099065aa0373a2b7ba81e653af61f0eb7dd96a1ffaeae71129cc",
+    "sampling.py": "c5ca5ce6cfebb1b2ae8434de05182a8dc1b380a177ece6e7000ed38e8d9e40cc"
+  },
+  "configuracao": {
+    "estado": "ativo",
+    "experimento": "baseline_modular",
+    "versao_sklearn": "1.9.1",
+    "dados": "data/hai-21.03",
+    "arquivos": [
+      "train1.csv.gz",
+      "train2.csv.gz",
+      "train3.csv.gz",
+      "test1.csv.gz",
+      "test2.csv.gz",
+      "test3.csv.gz",
+      "test4.csv.gz",
+      "test5.csv.gz"
+    ],
+    "particoes": {
+      "treino": [
+        "test1.csv.gz",
+        "test2.csv.gz",
+        "test3.csv.gz"
+      ],
+      "validacao": [
+        "test4.csv.gz"
+      ],
+      "teste": [
+        "test5.csv.gz"
+      ]
+    },
+    "rf": {
+      "n_estimators": 100,
+      "class_weight": "balanced_subsample",
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "isolation_forest": {
+      "n_estimators": 100,
+      "max_samples": 256,
+      "contamination": "auto",
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "pca": {
+      "n_components": 0.95,
+      "svd_solver": "full"
+    }
+  },
+  "python": "3.12.14",
+  "bibliotecas": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.5.3",
+    "PyYAML": "6.0.3"
+  },
+  "dados": {
+    "repositorio": "https://github.com/icsdataset/hai",
+    "revisao": "2a814cebc9a66b06c9e5cd545e2d72e65d383737",
+    "subpasta": "hai-21.03",
+    "arquivos": {
+      "test1.csv.gz": {
+        "bytes": 6149549,
+        "sha256": "532de41bed372206941609d05b763958f59abecfd63c8c123649f823452e445e"
+      },
+      "test2.csv.gz": {
+        "bytes": 16765328,
+        "sha256": "c5572e0ed19906107ceb56c4b4f40e165153fc7ba87b3506230d53d2478c29bb"
+      },
+      "test3.csv.gz": {
+        "bytes": 15477098,
+        "sha256": "bff835894baff0c73871bc01ece4f5cf759d455a049e808b012128767420caaf"
+      },
+      "test4.csv.gz": {
+        "bytes": 5602841,
+        "sha256": "51380fd28fd985b94a10cae3d8b80926becb3af9f233f2d3a38ab8be9482a482"
+      },
+      "test5.csv.gz": {
+        "bytes": 13199829,
+        "sha256": "f0d59308b167ed95d0e81fb3e27c906682c9b21d3dba0ab4c4d696565df35179"
+      },
+      "train1.csv.gz": {
+        "bytes": 30651421,
+        "sha256": "fdd0162315b32817ba665e2cc8990eb09c47c4edc29683a86b11dc9df062b3a9"
+      },
+      "train2.csv.gz": {
+        "bytes": 31430645,
+        "sha256": "c330af06a24f5fe3df864dddc0e9cbbbfd27db2e005bd32dc8ab3eb2ab356337"
+      },
+      "train3.csv.gz": {
+        "bytes": 67961579,
+        "sha256": "de09120c617bad5f4f3cab86705137fe7ced4b1123fb67ffdf67fd645f3d1b8f"
+      }
+    }
+  },
+  "etapas": {
+    "exploracao": {
+      "concluida_em": "2026-11-12T22:03:10.940923-03:00",
+      "arquivos": 8,
+      "colunas_originais": 84
+    }
+  }
+}

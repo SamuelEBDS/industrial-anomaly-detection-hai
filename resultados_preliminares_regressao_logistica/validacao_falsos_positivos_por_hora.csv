@@ -1,0 +1,13 @@
+arquivo_origem,hora,registros_normais,falsos_positivos,pontuacao_mediana,pontuacao_p90,taxa_fp,particao,variante,configuracao,semente_amostragem
+test4.csv.gz,2020-07-28 12:00:00,3346,6,0.0007645874714101239,0.002131691574452351,0.0017931858936043037,validacao,regressao_logistica,Regressão Logística sem pesos,
+test4.csv.gz,2020-07-28 13:00:00,3338,9,0.0012863469668570942,0.003364933985724134,0.0026962252846015576,validacao,regressao_logistica,Regressão Logística sem pesos,
+test4.csv.gz,2020-07-28 14:00:00,3600,8,0.0047274803687978526,0.014527822838641576,0.0022222222222222222,validacao,regressao_logistica,Regressão Logística sem pesos,
+test4.csv.gz,2020-07-28 15:00:00,3421,1,0.005368583360159109,0.012017596074802125,0.00029231218941829873,validacao,regressao_logistica,Regressão Logística sem pesos,
+test4.csv.gz,2020-07-28 16:00:00,3516,34,0.008416492185950883,0.01610673960475965,0.009670079635949944,validacao,regressao_logistica,Regressão Logística sem pesos,
+test4.csv.gz,2020-07-28 17:00:00,3342,12,0.009964037800134065,0.032962823268945673,0.003590664272890485,validacao,regressao_logistica,Regressão Logística sem pesos,
+test4.csv.gz,2020-07-28 18:00:00,3600,0,0.010928116584316416,0.03342804501012945,0.0,validacao,regressao_logistica,Regressão Logística sem pesos,
+test4.csv.gz,2020-07-28 19:00:00,3600,0,0.0056219886064868075,0.015188280227319837,0.0,validacao,regressao_logistica,Regressão Logística sem pesos,
+test4.csv.gz,2020-07-28 20:00:00,3480,0,0.003447580818994031,0.007096510464822368,0.0,validacao,regressao_logistica,Regressão Logística sem pesos,
+test4.csv.gz,2020-07-28 21:00:00,3600,0,0.006109636893081225,0.019412855336214552,0.0,validacao,regressao_logistica,Regressão Logística sem pesos,
+test4.csv.gz,2020-07-28 22:00:00,3600,0,0.002598391165015817,0.007218792876134821,0.0,validacao,regressao_logistica,Regressão Logística sem pesos,
+test4.csv.gz,2020-07-28 23:00:00,1,0,0.005118481164078812,0.005118481164078812,0.0,validacao,regressao_logistica,Regressão Logística sem pesos,

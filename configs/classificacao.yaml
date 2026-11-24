@@ -1,0 +1,18 @@
+# Plano da próxima etapa; ainda não executável.
+estado: planejamento
+sementes:
+- 13
+- 42
+- 2026
+proporcoes_ataque_normal:
+- 20
+- 10
+- 5
+- 1
+preservar_todos_ataques: true
+estratos:
+- arquivo_origem
+- hora
+pesos_de_classe_com_subamostragem: null
+selecionar_configuracao_em: validacao
+test5: comparacao_historica

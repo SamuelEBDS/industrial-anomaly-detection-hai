@@ -1,0 +1,2 @@
+particao,variante,configuracao,semente_amostragem,normais_treino,ataques_treino,limiar,precisao,recall,f1,pr_auc,average_precision,acuracia,verdadeiros_positivos,verdadeiros_negativos,falsos_positivos,falsos_negativos,taxa_fp,episodios_detectados,episodios_totais,atraso_mediano_segundos
+teste_historico,regressao_logistica,Regressão Logística sem pesos,,264390,5613,0.15296581460202174,0.6344513928368392,0.5126320624712908,0.5670731707317073,0.5252460117561901,0.525599813578216,0.9815586411402474,1116,89581,643,1061,0.007126706862918958,12,12,21.0

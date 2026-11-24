@@ -1,0 +1,13 @@
+intervalo_id,inicio,fim,registros_ataque,registros_detectados,primeiro_alerta,cobertura,atraso_segundos,particao,variante,configuracao,semente_amostragem
+1,2020-07-30 11:16:00,2020-07-30 11:18:51,172,85,2020-07-30 11:16:45,0.4941860465116279,45.0,teste_historico,regressao_logistica,Regressão Logística sem pesos,
+2,2020-07-30 13:30:03,2020-07-30 13:34:20,258,15,2020-07-30 13:31:16,0.05813953488372093,73.0,teste_historico,regressao_logistica,Regressão Logística sem pesos,
+3,2020-07-30 16:05:08,2020-07-30 16:09:23,256,114,2020-07-30 16:05:59,0.4453125,51.0,teste_historico,regressao_logistica,Regressão Logística sem pesos,
+4,2020-07-30 17:45:00,2020-07-30 17:46:59,120,113,2020-07-30 17:45:00,0.9416666666666667,0.0,teste_historico,regressao_logistica,Regressão Logística sem pesos,
+5,2020-07-30 18:38:09,2020-07-30 18:41:31,203,108,2020-07-30 18:38:23,0.5320197044334976,14.0,teste_historico,regressao_logistica,Regressão Logística sem pesos,
+6,2020-07-30 20:42:03,2020-07-30 20:44:35,153,118,2020-07-30 20:42:03,0.7712418300653595,0.0,teste_historico,regressao_logistica,Regressão Logística sem pesos,
+7,2020-07-30 23:13:05,2020-07-30 23:14:23,79,52,2020-07-30 23:13:31,0.6582278481012658,26.0,teste_historico,regressao_logistica,Regressão Logística sem pesos,
+8,2020-07-31 01:15:06,2020-07-31 01:15:56,51,1,2020-07-31 01:15:46,0.0196078431372549,40.0,teste_historico,regressao_logistica,Regressão Logística sem pesos,
+9,2020-07-31 02:01:11,2020-07-31 02:05:11,241,23,2020-07-31 02:02:45,0.0954356846473029,94.0,teste_historico,regressao_logistica,Regressão Logística sem pesos,
+10,2020-07-31 09:54:01,2020-07-31 09:58:22,262,152,2020-07-31 09:54:17,0.5801526717557252,16.0,teste_historico,regressao_logistica,Regressão Logística sem pesos,
+11,2020-07-31 10:40:00,2020-07-31 10:41:59,120,119,2020-07-31 10:40:00,0.9916666666666667,0.0,teste_historico,regressao_logistica,Regressão Logística sem pesos,
+12,2020-07-31 11:20:59,2020-07-31 11:25:20,262,216,2020-07-31 11:21:09,0.8244274809160306,10.0,teste_historico,regressao_logistica,Regressão Logística sem pesos,

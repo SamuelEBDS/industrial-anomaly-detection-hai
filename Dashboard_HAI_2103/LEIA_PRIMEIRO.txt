@@ -1,0 +1,27 @@
+DASHBOARD HAI 21.03 — V11: AJUSTES PARA A DEFESA
+
+Atualização da V10. Mantém o cabeçalho industrial, dados e cálculos.
+- Fontes, legendas, marcadores e horários maiores e com mais contraste.
+- Unidade física quando confirmada pelo manual HAI (Data Points).
+- P3_LIT01: escala original do CSV; não converter para porcentagem sem validação.
+- P3_PIT01, P4_ST_PT01 e P4_ST_TT01: valores digitais, sem conversão.
+- Cartões: métricas do episódio inteiro; cor e estado do instante selecionado.
+- Tempo relativo ao início ou fim do ataque em destaque.
+
+INSTALAÇÃO (preserve seus dados atuais e faça backup)
+1. Extraia este ZIP na pasta Dashboard_HAI_2103, substituindo os arquivos
+   app.py, montar_painel.py e os arquivos correspondentes de interface/.
+2. Não substitua ou exclua a pasta dados/ ou dados_hai.py.
+3. No terminal, dentro de Dashboard_HAI_2103 e com seu ambiente virtual ativo:
+   python montar_painel.py
+   python -m streamlit run app.py --server.port 8502
+4. Abra http://127.0.0.1:8502 e atualize com Ctrl+Shift+R.
+
+Verificação: compilação do JS e geração do HTML concluídas; testados no navegador
+seleção de episódio/sinal, reprodução, aba Resultados e largura de 800 px.
+A imagem do cabeçalho é ilustrativa. O painel reproduz previsões históricas.
+
+ATENÇÃO: o ZIP não contém dados nem previsões. A instalação preserva sua execução.
+O teste com os dados de referência arquivados apresentou 647 FP da LR e 1.121 FP
+no ensemble; o artigo usa 643 e 1.118. A aba Resultados mantém o aviso de divergência.
+Para a defesa, confirme que os dados locais são os da execução do artigo.

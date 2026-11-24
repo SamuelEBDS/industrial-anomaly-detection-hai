@@ -1,0 +1,11 @@
+{
+  "tempos_segundos_por_rodada_nesta_maquina": {
+    "J1": 8.7,
+    "J2": 42.3,
+    "J3": 72.5,
+    "EXT": 69.2
+  },
+  "execucao": "J1, J2, J3 em sequência; EXT em paralelo. Os tempos individuais dependem da máquina e da concorrência.",
+  "conferencia_RF_52": "Limiar 0,20, FP, VP e episódios do RF com pesos de 52 sinais coincidiram com o ensaio anterior em cada um dos quatro arquivos externos e na referência histórica 21.03/test5.",
+  "controle_externo_sempre_alerta_F1": 0.06446427136082308
+}

@@ -1,0 +1,26 @@
+{
+  "particao": "validacao",
+  "arquivo": "test4.csv.gz",
+  "criterio": "Maior F1 médio; em empate, menos FP médios e depois ordem alfabética.",
+  "melhor_rf": "RF sem pesos",
+  "melhor_rf_subamostrado": "RF 1:20",
+  "limiares": {
+    "rf_ponderado": 0.17,
+    "if_sem_pca": 0.5487555123148045,
+    "if_com_pca": 0.5679992437002248,
+    "rf_sem_pesos": 0.28,
+    "rf_1_20_s13": 0.4,
+    "rf_1_20_s42": 0.32,
+    "rf_1_20_s2026": 0.32,
+    "rf_1_10_s13": 0.46,
+    "rf_1_10_s42": 0.44,
+    "rf_1_10_s2026": 0.43,
+    "rf_1_5_s13": 0.51,
+    "rf_1_5_s42": 0.46,
+    "rf_1_5_s2026": 0.56,
+    "rf_1_1_s13": 0.47,
+    "rf_1_1_s42": 0.49,
+    "rf_1_1_s2026": 0.55
+  },
+  "fixada_em": "2026-11-11T10:15:59.547002-03:00"
+}

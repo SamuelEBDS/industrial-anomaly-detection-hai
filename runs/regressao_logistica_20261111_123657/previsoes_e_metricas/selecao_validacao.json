@@ -1,0 +1,7 @@
+{
+  "particao": "validacao",
+  "arquivo": "test4.csv.gz",
+  "limiar": 0.15296581460202174,
+  "criterio": "Maior F1; em empate, maior limiar.",
+  "fixada_em": "2026-11-11T12:37:10.919519-03:00"
+}

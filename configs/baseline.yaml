@@ -1,0 +1,36 @@
+estado: ativo
+experimento: baseline_modular
+versao_sklearn: 1.9.1
+dados: data/hai-21.03
+arquivos:
+- train1.csv.gz
+- train2.csv.gz
+- train3.csv.gz
+- test1.csv.gz
+- test2.csv.gz
+- test3.csv.gz
+- test4.csv.gz
+- test5.csv.gz
+particoes:
+  treino:
+  - test1.csv.gz
+  - test2.csv.gz
+  - test3.csv.gz
+  validacao:
+  - test4.csv.gz
+  teste:
+  - test5.csv.gz
+rf:
+  n_estimators: 100
+  class_weight: balanced_subsample
+  random_state: 42
+  n_jobs: -1
+isolation_forest:
+  n_estimators: 100
+  max_samples: 256
+  contamination: auto
+  random_state: 42
+  n_jobs: -1
+pca:
+  n_components: 0.95
+  svd_solver: full

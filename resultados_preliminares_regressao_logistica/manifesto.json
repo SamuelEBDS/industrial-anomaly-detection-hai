@@ -1,0 +1,210 @@
+{
+  "inicio": "2026-11-11T12:29:41.337085-03:00",
+  "referencia_balanceamento": "balanceamento_validado",
+  "referencia_manifesto_sha256": "bb94e235edfdafeb6fbddb5a6e29ba5ab36e738b2cd85c609834aba7ca963e66",
+  "dados": {
+    "repositorio": "https://github.com/icsdataset/hai",
+    "revisao": "2a814cebc9a66b06c9e5cd545e2d72e65d383737",
+    "subpasta": "hai-21.03",
+    "arquivos": {
+      "test1.csv.gz": {
+        "bytes": 6149549,
+        "sha256": "532de41bed372206941609d05b763958f59abecfd63c8c123649f823452e445e"
+      },
+      "test2.csv.gz": {
+        "bytes": 16765328,
+        "sha256": "c5572e0ed19906107ceb56c4b4f40e165153fc7ba87b3506230d53d2478c29bb"
+      },
+      "test3.csv.gz": {
+        "bytes": 15477098,
+        "sha256": "bff835894baff0c73871bc01ece4f5cf759d455a049e808b012128767420caaf"
+      },
+      "test4.csv.gz": {
+        "bytes": 5602841,
+        "sha256": "51380fd28fd985b94a10cae3d8b80926becb3af9f233f2d3a38ab8be9482a482"
+      },
+      "test5.csv.gz": {
+        "bytes": 13199829,
+        "sha256": "f0d59308b167ed95d0e81fb3e27c906682c9b21d3dba0ab4c4d696565df35179"
+      },
+      "train1.csv.gz": {
+        "bytes": 30651421,
+        "sha256": "fdd0162315b32817ba665e2cc8990eb09c47c4edc29683a86b11dc9df062b3a9"
+      },
+      "train2.csv.gz": {
+        "bytes": 31430645,
+        "sha256": "c330af06a24f5fe3df864dddc0e9cbbbfd27db2e005bd32dc8ab3eb2ab356337"
+      },
+      "train3.csv.gz": {
+        "bytes": 67961579,
+        "sha256": "de09120c617bad5f4f3cab86705137fe7ced4b1123fb67ffdf67fd645f3d1b8f"
+      }
+    }
+  },
+  "particoes": {
+    "treino": [
+      "test1.csv.gz",
+      "test2.csv.gz",
+      "test3.csv.gz"
+    ],
+    "validacao": [
+      "test4.csv.gz"
+    ],
+    "teste": [
+      "test5.csv.gz"
+    ]
+  },
+  "python": "3.14.4",
+  "bibliotecas": {
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.5.3",
+    "PyYAML": "6.0.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "parametros": {
+    "solver": "lbfgs",
+    "C": 1.0,
+    "l1_ratio": 0.0,
+    "class_weight": null,
+    "max_iter": 1000,
+    "tol": 1e-06
+  },
+  "padronizacao": "StandardScaler ajustado em todo o treino",
+  "subamostragem": false,
+  "etapas": {
+    "treino": {
+      "concluida_em": "2026-11-11T12:29:54.795214-03:00",
+      "iteracoes": 635,
+      "segundos": 10.11224211900003
+    },
+    "validacao": {
+      "particao": "validacao",
+      "arquivo": "test4.csv.gz",
+      "limiar": 0.1526402863217528,
+      "criterio": "Maior F1; em empate, maior limiar.",
+      "fixada_em": "2026-11-11T12:29:55.738160-03:00"
+    },
+    "teste_historico": {
+      "concluida_em": "2026-11-11T12:29:59.012119-03:00",
+      "registros": 92401,
+      "limiar": 0.1526402863217528
+    }
+  },
+  "contagens": {
+    "treino": {
+      "normais": 264390,
+      "ataques": 5613
+    },
+    "validacao": {
+      "normais": 38444,
+      "ataques": 1157
+    },
+    "teste_historico": {
+      "normais": 90224,
+      "ataques": 2177
+    }
+  },
+  "codigo_sha256": {
+    "executar_regressao_logistica.py": "22c8e9d61e6dfcae3b5ed90799f241a12f745215f96a8163176bf89c329866a9",
+    "src/hai_tcc/__init__.py": "85ea59506d08dc0f4000a0cb8e3f57962e81da582a5a16a8623591439616b86c",
+    "src/hai_tcc/classificacao/__init__.py": "e76dcdb553721daae02b82a8ce0577ed5349d261cfcfaa2618b7fc22a5c7f11d",
+    "src/hai_tcc/classificacao/avaliacao.py": "8045169d8e7dd6e3586daf3120e9d4e9375f0c9082be5ad892f1d4e30b19c46d",
+    "src/hai_tcc/classificacao/experimento.py": "d38afce616eeaf3c26ae59b993f5a7d3435b03f44642ccba96560f6770641583",
+    "src/hai_tcc/classificacao/regressao_logistica.py": "f142473132d86af33ca73f3813f019076e7018962653ce4dd9bf3e957b2cef03",
+    "src/hai_tcc/classificacao/relatorio.py": "2def6d600e82720d32ce99f07b6bee236131a1c25dfa176fc28311ab1b0b7875",
+    "src/hai_tcc/classificacao/relatorio_logistica.py": "d4e571fa67abc05509cc403bdfa31af5ee44276e039cdf2eb5eb754463ae7d1d",
+    "src/hai_tcc/data.py": "969a0acef976c7ddff636724ac8c1e2cc567ae05b6cb9e46eb12439428464664",
+    "src/hai_tcc/evaluation.py": "990bf796fe3e69ff0db1086d0f3eb4516ec643ea51e1da23bf6a5ba605d7cc9a",
+    "src/hai_tcc/experiment.py": "7c00f54f1c83102aac21fb97045609fef31a53300d4fa69a37038f3cf7ed1cd8",
+    "src/hai_tcc/features.py": "ef8e7dcb741c5a2fc5dff9fdf5ac4595e4366150c04409f51ef939634e5e0311",
+    "src/hai_tcc/models.py": "c21e628c7171099065aa0373a2b7ba81e653af61f0eb7dd96a1ffaeae71129cc",
+    "src/hai_tcc/sampling.py": "c5ca5ce6cfebb1b2ae8434de05182a8dc1b380a177ece6e7000ed38e8d9e40cc"
+  },
+  "colunas_modelo": [
+    "P1_B2004",
+    "P1_B2016",
+    "P1_B3004",
+    "P1_B3005",
+    "P1_B4002",
+    "P1_B4005",
+    "P1_B400B",
+    "P1_B4022",
+    "P1_FCV01D",
+    "P1_FCV01Z",
+    "P1_FCV02D",
+    "P1_FCV02Z",
+    "P1_FCV03D",
+    "P1_FCV03Z",
+    "P1_FT01",
+    "P1_FT01Z",
+    "P1_FT02",
+    "P1_FT02Z",
+    "P1_FT03",
+    "P1_FT03Z",
+    "P1_LCV01D",
+    "P1_LCV01Z",
+    "P1_LIT01",
+    "P1_PCV01D",
+    "P1_PCV01Z",
+    "P1_PCV02D",
+    "P1_PCV02Z",
+    "P1_PIT01",
+    "P1_PIT02",
+    "P1_TIT01",
+    "P1_TIT02",
+    "P2_24Vdc",
+    "P2_CO_rpm",
+    "P2_Emerg",
+    "P2_HILout",
+    "P2_OnOff",
+    "P2_SIT01",
+    "P2_SIT02",
+    "P2_VT01",
+    "P2_VXT02",
+    "P2_VXT03",
+    "P2_VYT02",
+    "P2_VYT03",
+    "P3_FIT01",
+    "P3_LCP01D",
+    "P3_LCV01D",
+    "P3_LIT01",
+    "P3_PIT01",
+    "P4_HT_FD",
+    "P4_HT_LD",
+    "P4_HT_PO",
+    "P4_HT_PS",
+    "P4_LD",
+    "P4_ST_FD",
+    "P4_ST_GOV",
+    "P4_ST_LD",
+    "P4_ST_PO",
+    "P4_ST_PS",
+    "P4_ST_PT01",
+    "P4_ST_TT01"
+  ],
+  "colunas_constantes": [
+    "P1_PP01AD",
+    "P1_PP01AR",
+    "P1_PP01BD",
+    "P1_PP01BR",
+    "P1_PP02D",
+    "P1_PP02R",
+    "P1_STSP",
+    "P2_ASD",
+    "P2_AutoGO",
+    "P2_MSD",
+    "P2_ManualGO",
+    "P2_RTR",
+    "P2_TripEx",
+    "P2_VTR01",
+    "P2_VTR02",
+    "P2_VTR03",
+    "P2_VTR04",
+    "P3_LH",
+    "P3_LL"
+  ],
+  "referencia_comparacao_sha256": "54ce946dadef2150073d97aa53255bb023c5a3fcc80c9dc80ef2825aab0a60ba"
+}

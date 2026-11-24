@@ -1,0 +1,9 @@
+arquivo,mesmas_colunas,valores_ausentes,horários_inválidos,horários_repetidos,ordem_temporal,rótulos_inválidos
+train1.csv.gz,True,0,0,0,True,0
+train2.csv.gz,True,0,0,0,True,0
+train3.csv.gz,True,0,0,0,True,0
+test1.csv.gz,True,0,0,0,True,0
+test2.csv.gz,True,0,0,0,True,0
+test3.csv.gz,True,0,0,0,True,0
+test4.csv.gz,True,0,0,0,True,0
+test5.csv.gz,True,0,0,0,True,0
